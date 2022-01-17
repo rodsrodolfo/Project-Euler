@@ -20,13 +20,11 @@ num = 20
 
 factorizationSmallest = Dict()
 
-for i in 2:num
-    for (factor, counter) in factorization(i)
-        if haskey(factorizationSmallest, factor)
-            factorizationSmallest[factor] = max(factorizationSmallest[factor], counter)
-        else
-            factorizationSmallest[factor] = counter
-        end
+for i in 2:num, (factor, counter) in factorization(i)
+    if haskey(factorizationSmallest, factor)
+        factorizationSmallest[factor] = max(factorizationSmallest[factor], counter)
+    else
+        factorizationSmallest[factor] = counter
     end
 end
 

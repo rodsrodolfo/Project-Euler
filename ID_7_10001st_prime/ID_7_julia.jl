@@ -1,4 +1,4 @@
-#= What is the 10 001st prime number? =#
+#= What is the 10001st prime number? =#
 
 function isPrime(num)
     for i in 2:trunc(Int, √num)

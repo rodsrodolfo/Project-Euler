@@ -3,11 +3,11 @@
 function sumSquares(num)
     f(x) = x^2
     squares = f.(1:num)
-    return sum(squares)
+    return BigInt(sum(squares))
 end
 
 function squareSum(num)
-    summation = sum(1:num)
+    summation = BigInt(sum(1:num))
     return summation^2
 end
 
