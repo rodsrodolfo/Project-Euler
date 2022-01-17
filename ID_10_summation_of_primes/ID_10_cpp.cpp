@@ -2,7 +2,7 @@
 #include <cmath>
 using namespace std;
 
-bool isPrime(long long num);
+bool isPrime(long num);
 
 int main()
 {
@@ -22,10 +22,10 @@ int main()
     return 0;
 }
 
-bool isPrime(long long num)
+bool isPrime(long num)
 {
     bool isPrime = true;
-    long long i = 2;
+    int i = 2;
     while (i <= sqrt(num) && isPrime)
     {
         if (num % i == 0)

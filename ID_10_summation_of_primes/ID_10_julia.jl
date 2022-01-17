@@ -14,6 +14,7 @@ end
 num = 2000000
 
 primeSum = 2
+primeSum = 2
 
 for i in 3:2:num-1
     if isPrime(i)
