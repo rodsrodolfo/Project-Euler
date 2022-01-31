@@ -2,7 +2,7 @@
 
 Find the sum of all the primes below two million. =#
 
-function isPrime(num::Integer)
+function isPrime(num::Int64)
     for i in 2:trunc(Int, √num)
         if num % i == 0
             return false
@@ -11,17 +11,20 @@ function isPrime(num::Integer)
     return true
 end
 
-num = 2000000
-
-primeSum = 2
-primeSum = 2
-
-for i in 3:2:num-1
-    if isPrime(i)
-        global primeSum += i
+function primeSumBelowNUM(num::Int64)
+    totalSum = 2
+    for i in 3:2:num-1
+        if isPrime(i)
+            totalSum += i
+        end
     end
+    return totalSum
 end
 
-println("Sum of primes below $num is: $primeSum")
+printResultID10(num::Int64) = println(@time primeSumBelowNUM(num))
+
+const NUM = 2000000
+
+printResultID10(NUM)
 
 # answer: 142913828922

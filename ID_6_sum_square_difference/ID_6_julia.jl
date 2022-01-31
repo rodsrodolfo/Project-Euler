@@ -13,7 +13,7 @@ end
 
 num = 100
 
-diff = squareSum(num) - sumSquares(num)
+@time diff = squareSum(num) - sumSquares(num)
 
 println("Difference is $diff")
 

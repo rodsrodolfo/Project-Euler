@@ -7,13 +7,14 @@ There exists exactly one Pythagorean triplet for which a + b + c = 1000.
 Find the product abc. =#
 
 function findTripletProduct(num)
-    for i in 1:num, j in i+1:num, k in j+1:num
-        if i + j + k == num && i^2 + j^2 == k^2
-            return i*j*k
+    for i in 1:num, j in i+1:num
+        k = √(i^2 + j^2)
+        if i + j + k == num
+            return i, j, k, i*j*k
         end
     end
 end
 
-println(findTripletProduct(1000))
+println(@time findTripletProduct(1000))
 
 # answer: 31875000

@@ -18,6 +18,6 @@ function largestPrimeFactor(num)
     num > largestPrimeFactor ? (return num) : (return largestPrimeFactor)
 end
 
-println(largestPrimeFactor(600851475143))
+println(@time largestPrimeFactor(600851475143))
 
 # answer: 6857

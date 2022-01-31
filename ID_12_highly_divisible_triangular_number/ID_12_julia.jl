@@ -32,6 +32,6 @@ end
 
 num = 500
 
-println(smallestTriangular(num))
+println(@time smallestTriangular(num))
 
 # answer: 76576500

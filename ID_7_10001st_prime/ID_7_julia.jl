@@ -13,7 +13,7 @@ num = 10001
 test = 3
 found = 1
 
-while found < num
+@time while found < num
     if isPrime(test)
         global found += 1
     end

@@ -1,8 +1,6 @@
-using LinearAlgebra
+@time triangleString = readlines("/home/mateus/Documents/Coding/Project Euler/ID_67_maximum_path_sum_II/p067_triangle.txt")
 
-triangleString = readlines("/home/mateus/Documents/Coding/Project Euler/ID_67_maximum_path_sum_II/p067_triangle.txt")
-
-triangleMatrix = vcat([hcat([i <= length(split(line)) ? parse(Int, split(line)[i]) : 0 for i in 1:length(triangleString)]...) for line in triangleString]...)
+@time triangleMatrix = vcat([hcat([i <= length(split(line)) ? parse(Int, split(line)[i]) : 0 for i in 1:length(triangleString)]...) for line in triangleString]...)
 
 function maxPathSum(tMatrix)
     for i in size(tMatrix)[1]-1:-1:1, j in 1:i
@@ -11,6 +9,6 @@ function maxPathSum(tMatrix)
     return tMatrix[1, 1]
 end
 
-println(maxPathSum(triangleMatrix))
+println(@time maxPathSum(triangleMatrix))
 
 # answer: 7273

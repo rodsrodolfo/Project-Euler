@@ -6,7 +6,7 @@ sequence = 13
 stringNum = string(num)
 maxProduct = 0
 
-for i in 1:length(stringNum) - sequence + 1
+@time for i in 1:length(stringNum) - sequence + 1
     product = prod([parse(Int, j) for j = stringNum[i:i + sequence - 1]])
     if product > maxProduct
         global maxProduct = product

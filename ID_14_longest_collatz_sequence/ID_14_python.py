@@ -1,24 +1,19 @@
 def collatz(num):
-    originalNum = num
-    stepsCount = 0
+    counter = 0
     while num != 1:
+        counter += 1
         if num % 2 == 0:
             num /= 2
         else:
             num = 3*num + 1
-        stepsCount += 1
-    return {"num": originalNum, "steps": stepsCount}
+    return counter
 
-def findLongestCollatz(num):
-    longest = {"steps": 0}
-    for i in range(1, num+1):
-        current = collatz(i)
-        if current["steps"] > longest["steps"]:
-            longest = current
-    return longest
+NUM = 10**6
 
-num = 999999
+mylist = list(map(collatz, range(1,NUM)))
+maxlist = max(mylist)
+indicemax = mylist.index(maxlist)
 
-print(findLongestCollatz(num))
+print(indicemax+1)
 
 # answer: 837799

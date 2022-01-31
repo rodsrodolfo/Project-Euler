@@ -4,7 +4,7 @@ Find the sum of all the multiples of 3 or 5 below 1000. =#
 
 multiplesSum = 0
 
-for i in 1:999
+@time for i in 1:999
     if i % 3 == 0 || i % 5 == 0
         global multiplesSum += i
     end

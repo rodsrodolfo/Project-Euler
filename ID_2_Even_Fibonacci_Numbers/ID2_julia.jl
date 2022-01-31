@@ -7,7 +7,7 @@ By considering the terms in the Fibonacci sequence whose values do not exceed fo
 evenSum = 0
 currentPair = [1, 2]
 
-while currentPair[2] < 4000000
+@time while currentPair[2] < 4000000
     if currentPair[2] % 2 == 0
         global evenSum += currentPair[2]
     end
