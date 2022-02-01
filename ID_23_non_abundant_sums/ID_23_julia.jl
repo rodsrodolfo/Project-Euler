@@ -1,4 +1,4 @@
-function d(n)
+function d(n::Int64)::Int64
     dn = 0
     for i in 1 : n ÷ 2
         if n % i ==0
@@ -8,7 +8,7 @@ function d(n)
     return dn
 end
 
-function listAbundantsBelow(num)
+function listAbundantsBelow(num::Int64)::Vector{Int64}
     listAbundants = Int64[]
     for i in 1:num-1
         if d(i) > i
@@ -18,7 +18,7 @@ function listAbundantsBelow(num)
     return listAbundants
 end
 
-function possibleSumTwoAbunBelow(num)
+function possibleSumTwoAbunBelow(num::Int64)::Vector{Int64}
     abundants = listAbundantsBelow(num)
     combinations = Int64[]
     for i in 1:length(abundants)
@@ -32,7 +32,7 @@ function possibleSumTwoAbunBelow(num)
     return combinations
 end
 
-function notPossibleCombinationBelow(num)
+function notPossibleCombinationBelow(num::Int64)::Vector{Int64}
     abundants = listAbundantsBelow(num)
     notPossible = [1:num-1...]
     for i in 1:length(abundants)
