@@ -30,4 +30,9 @@ def fibNUMdigits(num):
     return count
 
 NUM = 1000
+
+from datetime import datetime
+begin_time = datetime.now()
+
 print(fibNUMdigits(NUM))
+print(datetime.now() - begin_time)

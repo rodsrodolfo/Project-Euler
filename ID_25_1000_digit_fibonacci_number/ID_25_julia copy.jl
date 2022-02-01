@@ -1,16 +1,16 @@
-function makeSameLength(a::Vector{Int64}, b::Vector{Int64})
+function makeSameLength(a::Vector{Int64}, b::Vector{Int64})::Tuple{Vector{Int64}, Vector{Int64}}
     for _ in 1:length(b)-length(a)
         pushfirst!(a, 0)
     end
     return a, b
 end
 
-function makeMatrix(a::Vector{Int64}, b::Vector{Int64})
+function makeMatrix(a::Vector{Int64}, b::Vector{Int64})::Matrix{Int64}
     a, b = makeSameLength(a, b)
     return hcat(a,b)
 end
 
-function sumLinesTuple(pair::Tuple{Vector{Int64}, Vector{Int64}})
+function sumLinesTuple(pair::Tuple{Vector{Int64}, Vector{Int64}})::Vector{Int64}
     mat = makeMatrix(pair[1],pair[2])
     result = Int64[]
     remainder = 0
@@ -23,7 +23,7 @@ function sumLinesTuple(pair::Tuple{Vector{Int64}, Vector{Int64}})
     return result
 end
 
-function fibNUMdigits(num::Int64)
+function fibNUMdigits(num::Int64)::Int64
     currPair = ([1],[2])
     count = 3
     while length(currPair[2]) < num
