@@ -2,15 +2,22 @@
 
 Find the largest palindrome made from the product of two 3-digit numbers. =#
 
-largestPalindrome = 0
-
-@time for i in 1:1000, j in 1:1000
-    num = i * j
-    if string(num) == reverse(string(num)) && largestPalindrome < num
-        global largestPalindrome = num
-    end
+function isPalindrome(num::Int64)::Bool
+    st = string(num)
+    st == reverse(st) && return true
+    return false
 end
 
-print(largestPalindrome)
+function findLargestPalindormeProductDigits(power::Int64)
+    largest = 0
+    for i in 1:10^power, j in 1:10^power
+        possible = i*j
+        possible > largest && isPalindrome(possible) && (largest = possible)
+    end
+    return largest
+end
+
+const NUM = 3
+println(@time findLargestPalindormeProductDigits(NUM))
 
 # answer: 906609
