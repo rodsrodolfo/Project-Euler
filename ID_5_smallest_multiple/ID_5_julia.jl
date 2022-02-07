@@ -2,7 +2,7 @@
 
 What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20? =#
 
-function factorization(num)
+function factorization(num::Int64)::Dict{Int64,Int64}
     factorization = Dict()
     factor = 2
     while num != 1
@@ -16,24 +16,19 @@ function factorization(num)
     return factorization
 end
 
-num = 20
+function numFromFactorization(factorization::Dict{Int64,Int64})::Int64
+    return prod(map((pair)->pair[1]^pair[2],(factor,power) for (factor,power) in factorization))
+end
 
-factorizationSmallest = Dict()
-
-for i in 2:num, (factor, counter) in factorization(i)
-    if haskey(factorizationSmallest, factor)
-        factorizationSmallest[factor] = max(factorizationSmallest[factor], counter)
-    else
-        factorizationSmallest[factor] = counter
+function factorizationSmallestMultiple(num::Int64)::Dict{Int64,Int64}
+    factorizationSmallest = Dict()
+    for i in 2:num, (factor, counter) in factorization(i)
+        factorizationSmallest[factor] = haskey(factorizationSmallest, factor) ? max(factorizationSmallest[factor], counter) : counter
     end
+    return factorizationSmallest
 end
 
-smallest = 1
-
-for (factor, counter) in factorizationSmallest
-    global smallest *= factor ^ counter
-end
-
-println("Smallest number divisible by all integers from 1 to $num is: $smallest")
+const NUM = 20
+println(@time numFromFactorization(factorizationSmallestMultiple(NUM)))
 
 # answer: 232792560

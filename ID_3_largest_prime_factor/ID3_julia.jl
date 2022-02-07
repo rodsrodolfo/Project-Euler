@@ -9,7 +9,7 @@ function largestPrimeFactor(num)
         if num % counter == 0
             # println("$counter devides $num")
             num /= counter
-            largestFactor = counter
+            largestPrimeFactor = counter
         else
             # println("$counter doesn't devide $num")
             counter == 2 ? counter += 1 : counter += 2

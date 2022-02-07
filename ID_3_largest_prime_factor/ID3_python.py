@@ -2,7 +2,8 @@
 
 What is the largest prime factor of the number 600851475143 ?"""
 
-from math import sqrt
+from datetime import datetime
+
 
 def largestPrimeFactor(num):
     largestFactor = 0
@@ -21,6 +22,9 @@ def largestPrimeFactor(num):
 
     return largestFactor
 
-print(largestPrimeFactor(600851475143))
 
+begin = datetime.now()
+answer = largestPrimeFactor(600851475143)
+print(datetime.now() - begin)
+print(answer)
 # answer: 6857

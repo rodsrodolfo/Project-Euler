@@ -4,16 +4,23 @@
 
 By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms. =#
 
-evenSum = 0
-currentPair = [1, 2]
-
-@time while currentPair[2] < 4000000
-    if currentPair[2] % 2 == 0
-        global evenSum += currentPair[2]
-    end
-    currentPair[1], currentPair[2] = currentPair[2], currentPair[1] + currentPair[2]
+function nextPair(pair::Tuple{Int64,Int64})::Tuple{Int64,Int64}
+    return (pair[2], sum(pair))
 end
 
-println(evenSum)
+function findSumEvenFibUnder(num::Int64)::Int64
+    evenSum = 0
+    currentPair = (1, 2)
+    while currentPair[2] < num
+        if iseven(currentPair[2])
+            evenSum += currentPair[2]
+        end
+        currentPair = nextPair(currentPair)
+    end
+    return evenSum
+end
+
+const NUM = 4000000
+println(@time findSumEvenFibUnder(NUM))
 
 # answer: 4613732

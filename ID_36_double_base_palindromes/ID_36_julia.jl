@@ -34,4 +34,4 @@ end
 const NUM = 1000000
 println(@time sumAllPalindromesBasesUnder(NUM))
 
-# answer:
+# answer: 872187

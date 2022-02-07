@@ -4,15 +4,19 @@
 
 By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms."""
 
+from datetime import datetime
+
 evenSum = 0
-currentPair = [1, 2]
+currentPair = (1, 2)
+
+begin = datetime.now()
 
 while currentPair[1] < 4000000:
     if currentPair[1] % 2 == 0:
         evenSum += currentPair[1]
-    currentPair[0], currentPair[1] = currentPair[1], currentPair[0] + \
-        currentPair[1]
+    currentPair = (currentPair[1], sum(currentPair))
 
+print(datetime.now()-begin)
 print(evenSum)
 
 # answer: 4613732

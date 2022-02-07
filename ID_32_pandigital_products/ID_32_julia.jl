@@ -1,6 +1,6 @@
 function isTripletPandigital(a::Int64, b::Int64, c::Int64)::Bool
     digitsAll = vcat(digits(a), digits(b), digits(c))
-    sort(digitsAll) != [1:9...] && return false
+    sort(digitsAll) != 1:9 && return false
     return true
 end
 

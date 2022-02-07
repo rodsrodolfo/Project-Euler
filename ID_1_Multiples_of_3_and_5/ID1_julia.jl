@@ -2,14 +2,17 @@
 
 Find the sum of all the multiples of 3 or 5 below 1000. =#
 
-multiplesSum = 0
-
-@time for i in 1:999
-    if i % 3 == 0 || i % 5 == 0
-        global multiplesSum += i
+function sumMultiples3and5below(num::Int64)::Int64
+    multiplesSum = 0
+    for i in 1:num
+        if i % 3 == 0 || i % 5 == 0
+            multiplesSum += i
+        end
     end
+    return multiplesSum
 end
 
-print(multiplesSum)
+const NUM = 1000
+println(@time sumMultiples3and5below(NUM))
 
 # answer = 233168
