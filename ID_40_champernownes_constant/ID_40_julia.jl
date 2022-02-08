@@ -8,7 +8,7 @@ function answer()
             curr += 1
             totalDigits += ndigits(curr)
         end
-        product *= reverse(digits(curr))[end - totalDigits + currPower]
+        product *= reverse(digits(curr))[end-totalDigits+currPower]
     end
     return product
 end

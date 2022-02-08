@@ -9,7 +9,7 @@ function isPrime(num::Int64)::Bool
 end
 
 function quadratic(n::Int64, a::Int64, b::Int64)::Int64
-    return n^2 + a*n + b
+    return n^2 + a * n + b
 end
 
 function consecutivePrimes(a::Int64, b::Int64)::Int64
@@ -23,8 +23,8 @@ function consecutivePrimes(a::Int64, b::Int64)::Int64
     end
 end
 
-function longestConsecutivePrimes(modA::Int64, modB::Int64)::Tuple{Int64, Int64, Int64}
-    longest = (0,0,0)
+function longestConsecutivePrimes(modA::Int64, modB::Int64)::Tuple{Int64,Int64,Int64}
+    longest = (0, 0, 0)
     for a in -modA:modA, b in -modB:modB
         consecutive = consecutivePrimes(a, b)
         longest[1] < consecutive && (longest = (consecutive, a, b))

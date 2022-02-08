@@ -12,7 +12,7 @@ function base10to2(num::Int64)::String
     base2 = ""
     curr = num
     while curr != 0
-        base2 = string(curr%2) * base2
+        base2 = string(curr % 2) * base2
         curr ÷= 2
     end
     return base2

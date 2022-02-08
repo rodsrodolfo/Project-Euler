@@ -10,7 +10,7 @@ function findTripletProduct(num)
     for i in 1:num, j in i+1:num
         k = √(i^2 + j^2)
         if i + j + k == num
-            return i, j, k, i*j*k
+            return Int(i * j * k)
         end
     end
 end

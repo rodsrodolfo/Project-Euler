@@ -7,27 +7,27 @@ end
 
 function makeMatrix(a::Vector{Int64}, b::Vector{Int64})
     a, b = makeSameLength(a, b)
-    return hcat(a,b)
+    return hcat(a, b)
 end
 
-function sumLinesTuple(pair::Tuple{Vector{Int64}, Vector{Int64}})
-    mat = makeMatrix(pair[1],pair[2])
+function sumLinesTuple(pair::Tuple{Vector{Int64},Vector{Int64}})
+    mat = makeMatrix(pair[1], pair[2])
     result = Int64[]
     remainder = 0
     for line in size(mat)[1]:-1:1
-        partialSum = remainder + sum(mat[line,:])
+        partialSum = remainder + sum(mat[line, :])
         pushfirst!(result, partialSum % 10)
-        remainder =  partialSum ÷ 10
+        remainder = partialSum ÷ 10
     end
     remainder != 0 && pushfirst!(result, remainder)
     return result
 end
 
 function fibNUMdigits(num::Int64)
-    currPair = ([1],[2])
+    currPair = ([1], [2])
     count = 3
     while length(currPair[2]) < num
-        currPair = (currPair[2],sumLinesTuple(currPair))
+        currPair = (currPair[2], sumLinesTuple(currPair))
         count += 1
     end
     return count

@@ -1,5 +1,5 @@
 function fileToDigitMatrix(path)
-    matrixDigitString = split.(readlines(path),"")
+    matrixDigitString = split.(readlines(path), "")
     return [parse(Int, line[i]) for line in matrixDigitString, i in 1:length(matrixDigitString[1])]
 end
 
@@ -11,7 +11,7 @@ function largeSum(path)
     for i in size(matrixDigitsInt)[2]:-1:1
         partialSum = remainder + sum(matrixDigitsInt[:, i])
         result = string(partialSum % 10) * result
-        remainder = partialSum ÷ 10    
+        remainder = partialSum ÷ 10
     end
     return string(remainder) * result
 end

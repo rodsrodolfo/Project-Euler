@@ -1,3 +1,6 @@
+from datetime import datetime
+
+
 def factorization(num):
     factorization = {}
     factor = 2
@@ -28,10 +31,10 @@ def distinctPowers(A, B):
                 distinctPowersList.append(factoringAB)
     return len(distinctPowersList)
 
+
 A, B = 100, 100
 
-from datetime import datetime
 begin_time = datetime.now()
 
-print(distinctPowers(A,B))
+print(distinctPowers(A, B))
 print(datetime.now() - begin_time)

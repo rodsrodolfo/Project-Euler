@@ -6,30 +6,19 @@ function perimeter(a::Int64, b::Int64, c::Float64)::Float64
     return a + b + c
 end
 
-function isInt(num::Float64)::Bool
-    num == num ÷ 1 && return true
-    return false
-end
-
-function numberSolutions(p::Int64)::Int64
-    number = 0
-    for a in 1:p, b in 1:a
-        hip = hipotenuse(a, b)
-        isInt(hip) && perimeter(a, b, hip) == p && (number += 1)
+function answer(num::Int64)::Int64
+    solutions = zeros(Int, num)
+    for a = 1:num÷2, b = 1:a
+        c = hipotenuse(a, b)
+        p = perimeter(a, b, c)
+        if isinteger(p) && p <= num
+            solutions[Int(p)] += 1
+        end
     end
-    return number
-end
-
-function maximizeSolutionsUnder(num::Int64)::Tuple{Int64, Int64}
-    maxFound = (0, 0)
-    for p in 1:num
-        sol = numberSolutions(p)
-        sol > maxFound[1] && (maxFound = (sol, p))
-    end
-    return maxFound
+    return findmax(solutions)[2]
 end
 
 const NUM = 1000
-println(@time maximizeSolutionsUnder(NUM))
+println(@time answer(NUM))
 
 # answer: 840

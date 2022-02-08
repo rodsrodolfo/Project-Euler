@@ -8,7 +8,7 @@ function howManyWays(pennies::Int64)::Int64
                         for f in 0:pennies÷5
                             for g in 0:pennies÷2
                                 for h in 0:pennies÷1
-                                    (200*a + 100*b + 50*c + 20*d + 10*e + 5*f + 2*g + h) == pennies && (found += 1)
+                                    (200 * a + 100 * b + 50 * c + 20 * d + 10 * e + 5 * f + 2 * g + h) == pennies && (found += 1)
                                 end
                             end
                         end

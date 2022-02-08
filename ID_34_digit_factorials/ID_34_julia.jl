@@ -6,10 +6,10 @@ end
 
 function findMaxFactorialDigits()::Int64
     i = 1
-    while parse(Int,"9"^i) < i*factorial(9)
-        i+=1
+    while parse(Int, "9"^i) < i * factorial(9)
+        i += 1
     end
-    return i*factorial(9)
+    return i * factorial(9)
 end
 
 function sumAllFactorialOfDigits()::Int64

@@ -1,7 +1,7 @@
 #= What is the sum of the digits of the number 2^1000? =#
 
 function sumOfDigitsNumToPower(num, power)
-    power == 9\0 && return 1
+    power == 9 \ 0 && return 1
     currDigits = vcat([0], digits(num))
 
     for i in 2:power

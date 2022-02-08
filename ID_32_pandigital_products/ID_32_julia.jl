@@ -17,7 +17,7 @@ function sumPandigitalProducts()
             product = i * j
             if !(product in foundPandigital) && isTripletPandigital(i, j, product)
                 push!(foundPandigital, product)
-                println(i, " ", j, " ", product)
+                # println(i, " ", j, " ", product)
             end
         end
     end

@@ -11,7 +11,7 @@ end
 function findLargestPalindormeProductDigits(power::Int64)
     largest = 0
     for i in 1:10^power, j in 1:10^power
-        possible = i*j
+        possible = i * j
         possible > largest && isPalindrome(possible) && (largest = possible)
     end
     return largest

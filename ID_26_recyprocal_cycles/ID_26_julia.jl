@@ -11,7 +11,7 @@ function cycleSize(num::Int64)::Int64
     end
 end
 
-function largestCycle(num::Int64)::Tuple{Int64, Int64}
+function largestCycle(num::Int64)::Tuple{Int64,Int64}
     largest = 0
     found = 1
     for i in 1:num

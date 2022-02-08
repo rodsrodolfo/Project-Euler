@@ -17,7 +17,7 @@ function factorization(num::Int64)::Dict{Int64,Int64}
 end
 
 function numFromFactorization(factorization::Dict{Int64,Int64})::Int64
-    return prod(map((pair)->pair[1]^pair[2],(factor,power) for (factor,power) in factorization))
+    return prod(map((pair) -> pair[1]^pair[2], (factor, power) for (factor, power) in factorization))
 end
 
 function factorizationSmallestMultiple(num::Int64)::Dict{Int64,Int64}

@@ -12,15 +12,18 @@ def factorization(num):
             if factor == 2:
                 factor += 1
             else:
-                factor +=2
+                factor += 2
     return factorization
 
+
 def numberOfDivisors(num):
-    exponentsPlusOne = [(exponent + 1) for exponent in factorization(num).values()]
+    exponentsPlusOne = [(exponent + 1)
+                        for exponent in factorization(num).values()]
     numberOfDivisors = 1
     for i in exponentsPlusOne:
         numberOfDivisors *= i
     return numberOfDivisors
+
 
 def smallestTriangularDivisors(num):
     last = 2
@@ -31,6 +34,7 @@ def smallestTriangularDivisors(num):
         triangular += last
 
     return triangular
+
 
 num = 500
 

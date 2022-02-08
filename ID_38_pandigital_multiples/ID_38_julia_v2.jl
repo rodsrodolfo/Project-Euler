@@ -10,15 +10,20 @@ end
 function possibleCandidateNum(num::Int64)::Int64
     limit = 1
     concatenationProduct = num
-    while ndigits(concatenationProduct) <= 8
+    while ndigits(concatenationProduct) < 9
         limit += 1
         concatenationProduct = concatenateNumbers(concatenationProduct, num * limit)
     end
     return concatenationProduct
 end
 
+function positiveSolutionQuadratic(a, b, c)
+    Δ = b^2 - 4 * a * c
+    return (-b + √Δ) / (2a)
+end
+
 function findLargestPandigitalMultiple()
-    maxLimit = 987654321 ÷ 11
+    maxLimit = trunc(Int, positiveSolutionQuadratic(2, 1, -987654321))
     maxFound = 0
     for tryNum in 1:maxLimit
         concatenationProduct = possibleCandidateNum(tryNum)

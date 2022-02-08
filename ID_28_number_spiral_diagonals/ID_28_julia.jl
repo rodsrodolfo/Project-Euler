@@ -1,7 +1,7 @@
 function sumDiagonalsSpiral(side)
     sumDiagonals = 1
     for i in 3:2:side, j in 0:3
-        sumDiagonals += i^2 - (i-1)*j
+        sumDiagonals += i^2 - (i - 1) * j
     end
     return sumDiagonals
 end

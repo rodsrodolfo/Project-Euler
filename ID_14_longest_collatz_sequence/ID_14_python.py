@@ -8,9 +8,10 @@ def collatz(num):
             num = 3*num + 1
     return counter
 
+
 NUM = 10**6
 
-mylist = list(map(collatz, range(1,NUM)))
+mylist = list(map(collatz, range(1, NUM)))
 maxlist = max(mylist)
 indicemax = mylist.index(maxlist)
 

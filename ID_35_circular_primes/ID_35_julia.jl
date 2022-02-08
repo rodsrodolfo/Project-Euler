@@ -21,7 +21,7 @@ function listOfDigitsCyclesOtherThan(num::Int64)::Vector{Int64}
     listOfCycles = Int64[]
     currCycle = string(num)
     for cycle in 1:ndigits(num)-1
-        currCycle = currCycle[2:end]*currCycle[1]
+        currCycle = currCycle[2:end] * currCycle[1]
         push!(listOfCycles, parse(Int64, currCycle))
     end
     return listOfCycles
@@ -47,7 +47,7 @@ end
 function countCircularUnder(num::Int64)::Int64
     count = 1
     for possible in 3:num
-        isAllOdd(possible) && isCircular(possible) && (count+=1)
+        isAllOdd(possible) && isCircular(possible) && (count += 1)
     end
     return count
 end

@@ -1,7 +1,7 @@
 function d(n)
     dn = 0
-    for i in 1 : n ÷ 2
-        if n % i ==0
+    for i in 1:n÷2
+        if n % i == 0
             dn += i
         end
     end
@@ -16,7 +16,7 @@ function sumAmicableUnder(num)
             sumAmicable += i
         end
     end
-    return(sumAmicable)
+    return (sumAmicable)
 end
 
 const NUM = 10000

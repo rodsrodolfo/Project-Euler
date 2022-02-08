@@ -25,7 +25,7 @@ function smallestTriangular(num)
     while numberOfDivisors(triangular) < num
         last += 1
         triangular += last
-    end 
+    end
 
     return triangular
 end
