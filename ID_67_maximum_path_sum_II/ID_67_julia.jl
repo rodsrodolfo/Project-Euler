@@ -1,4 +1,4 @@
-@time triangleString = readlines("/home/mateus/Documents/Coding/Project Euler/ID_67_maximum_path_sum_II/p067_triangle.txt")
+@time triangleString = readlines("/home/mateus/Documents/Coding/Project Euler/ID_67_maximum_path_sum_II/ID_67_source.txt")
 
 @time triangleMatrix = vcat([hcat([i <= length(split(line)) ? parse(Int, split(line)[i]) : 0 for i in 1:length(triangleString)]...) for line in triangleString]...)
 
