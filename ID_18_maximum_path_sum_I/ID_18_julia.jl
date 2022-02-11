@@ -17,3 +17,4 @@ filePath = "/home/mateus/Documents/Coding/Project Euler/ID_18_maximum_path_sum_I
 println(@time maxPathSum(filePath))
 
 # answer: 1074
+# 0.143577 seconds (523.58 k allocations: 28.637 MiB, 99.75% compilation time)

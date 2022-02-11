@@ -56,3 +56,4 @@ const NUM = 1000000
 println(@time countCircularUnder(NUM))
 
 # answer: 55
+# 0.131017 seconds (1.07 M allocations: 107.842 MiB, 12.72% gc time)

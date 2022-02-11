@@ -10,3 +10,4 @@ const SIDE = 1001
 println(@time sumDiagonalsSpiral(SIDE))
 
 # answer: 669171001
+# 0.000001 seconds

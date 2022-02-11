@@ -37,3 +37,4 @@ end
 println(@time findD())
 
 # answer: 5482660
+# 0.043297 seconds (2.29 k allocations: 18.258 MiB)

@@ -37,3 +37,4 @@ const NUM = 1000
 println(@time fibNUMdigits(NUM))
 
 # answer: 4782
+# 0.158834 seconds (2.42 M allocations: 269.489 MiB, 13.27% gc time)

@@ -21,3 +21,4 @@ end
 println(@time largestPrimeFactor(600851475143))
 
 # answer: 6857
+# 0.000075 seconds

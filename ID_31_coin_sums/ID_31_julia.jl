@@ -24,3 +24,4 @@ const PENNIES = 200
 println(@time howManyWays(PENNIES))
 
 # answer: 73682
+# 0.786598 seconds

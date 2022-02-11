@@ -57,25 +57,23 @@ end
 function lowestSum5ConcatenatablePrimes()::Int64
     listPrimes = Int64[3, 7]
     goodPairs = Dict{Int64,Vector{Int64}}(i => Int64[] for i in listPrimes)
-    badPairs = Dict{Int64,Vector{Int64}}(i => Int64[] for i in listPrimes)
+    lastPrime = listPrimes[end]
     while true
-        lastPrime = listPrimes[end]
         for otherPrime in listPrimes[1:end-1]
             if  isGoodPair((otherPrime, lastPrime))
                 push!(goodPairs[otherPrime], lastPrime)
-            else
-                push!(badPairs[otherPrime], lastPrime)
             end
         end
         setFound = isThereASet(goodPairs)
         setFound != false && return setFound
         nextPrime = nextPrimeSet(listPrimes)
         push!(listPrimes, nextPrime)
+        lastPrime = nextPrime
         goodPairs[nextPrime] = Int64[]
-        badPairs[nextPrime] = Int64[]
     end
 end
 
 println(@time lowestSum5ConcatenatablePrimes())
 
 # answer: 26033
+# 2.730564 seconds (7.50 M allocations: 807.590 MiB, 1.85% gc time, 1.75% compilation time)

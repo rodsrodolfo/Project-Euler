@@ -30,3 +30,4 @@ end
 println(@time findLargestPandigitalMultiple())
 
 # answer: 932718654
+# 2.640177 seconds (1.65 k allocations: 206.000 KiB)

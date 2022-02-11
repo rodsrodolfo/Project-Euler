@@ -16,3 +16,4 @@ end
 println(@time answer())
 
 # answer: 210
+# 0.001096 seconds (14 allocations: 1.188 KiB)

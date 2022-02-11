@@ -22,3 +22,4 @@ end
 println(@time denominator(findDenominatorProductDigitsCancelling()))
 
 # answer: 100
+# 0.000069 seconds (2 allocations: 1.516 KiB)

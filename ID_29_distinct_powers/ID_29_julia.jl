@@ -31,3 +31,4 @@ const A, B = 100, 100
 println(@time distinctPowers(A, B))
 
 # answer: 9183
+# 0.354541 seconds (39.61 k allocations: 5.455 MiB)

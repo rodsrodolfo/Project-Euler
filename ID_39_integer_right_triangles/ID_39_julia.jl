@@ -22,3 +22,4 @@ const NUM = 1000
 println(@time answer(NUM))
 
 # answer: 840
+# 0.000249 seconds (1 allocation: 7.938 KiB)

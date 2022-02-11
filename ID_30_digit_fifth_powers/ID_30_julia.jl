@@ -17,3 +17,4 @@ const POWER = 5
 println(@time findSumAllSumOfDigitsToPower(POWER))
 
 # answer: 443839
+# 0.181855 seconds (2.00 M allocations: 210.540 MiB, 9.50% gc time)

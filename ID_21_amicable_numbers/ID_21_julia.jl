@@ -24,3 +24,4 @@ const NUM = 10000
 println(@time sumAmicableUnder(NUM))
 
 # answer: 31626
+# 0.180566 seconds

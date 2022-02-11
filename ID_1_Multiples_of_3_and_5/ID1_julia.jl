@@ -16,3 +16,4 @@ const NUM = 1000
 println(@time sumMultiples3and5below(NUM))
 
 # answer = 233168
+# 0.000004 seconds

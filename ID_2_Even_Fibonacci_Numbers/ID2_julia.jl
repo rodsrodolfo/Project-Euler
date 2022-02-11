@@ -24,3 +24,4 @@ const NUM = 4000000
 println(@time findSumEvenFibUnder(NUM))
 
 # answer: 4613732
+# 0.000001 seconds

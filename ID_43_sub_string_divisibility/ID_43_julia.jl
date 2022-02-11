@@ -29,3 +29,4 @@ end
 println(@time findSum())
 
 # answer: 16695334890
+# 1.880781 seconds (14.52 M allocations: 1.622 GiB, 31.54% gc time)

@@ -21,3 +21,4 @@ const NUM = 3
 println(@time findLargestPalindormeProductDigits(NUM))
 
 # answer: 906609
+# 0.007007 seconds (189.13 k allocations: 7.696 MiB)

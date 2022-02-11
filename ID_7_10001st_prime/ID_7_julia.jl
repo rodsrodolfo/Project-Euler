@@ -23,3 +23,4 @@ end
 println("$(num)st prime is $(test - 2)")
 
 # answer: 104743
+# 0.025785 seconds (79.61 k allocations: 2.037 MiB, 47.17% compilation time)

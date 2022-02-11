@@ -23,3 +23,4 @@ end
 println(@time sumAllFactorialOfDigits())
 
 # answer: 40730
+# 0.360996 seconds (5.08 M allocations: 539.554 MiB, 5.09% gc time)

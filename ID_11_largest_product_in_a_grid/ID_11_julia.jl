@@ -54,3 +54,4 @@ const NUM = 4
 println(@time Int(answer(readdlm("/home/mateus/Documents/Coding/Project Euler/ID_11_largest_product_in_a_grid/ID_11_source.txt"), NUM)))
 
 # answer: 70600674
+# 0.359960 seconds (120.35 k allocations: 6.382 MiB, 98.38% compilation time)

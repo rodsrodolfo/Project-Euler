@@ -21,4 +21,5 @@ end
 const PATH = "/home/mateus/Documents/Coding/Project Euler/ID_22_names_scores/ID_22_source.txt"
 println(@time sumNameScore(PATH))
 
-# answer: 
+# answer: 871198282
+# 0.007266 seconds (15.52 k allocations: 1.456 MiB)

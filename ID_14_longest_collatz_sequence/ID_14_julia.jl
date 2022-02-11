@@ -12,3 +12,4 @@ end
 println(@time findmax(map(collatz, 1:L)))
 
 # answer: 837799
+# 0.345226 seconds (153.08 k allocations: 16.401 MiB, 15.20% compilation time)

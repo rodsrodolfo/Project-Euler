@@ -28,3 +28,6 @@ function p60()
 end
 
 println(@time p60())
+
+# answer: 26033
+# 0.321989 seconds (476.69 k allocations: 11.335 MiB, 33.41% compilation time)

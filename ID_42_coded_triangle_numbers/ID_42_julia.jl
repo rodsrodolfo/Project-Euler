@@ -32,3 +32,4 @@ const PATH = "/home/mateus/Documents/Coding/Project Euler/ID_42_coded_triangle_n
 println(@time howManyTriangularWords(wordsFromFile(PATH)))
 
 # answer: 162
+# 0.005637 seconds (1.81 k allocations: 168.525 KiB)

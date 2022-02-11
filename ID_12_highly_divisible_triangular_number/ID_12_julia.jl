@@ -35,3 +35,4 @@ num = 500
 println(@time smallestTriangular(num))
 
 # answer: 76576500
+# 0.482744 seconds (389.50 k allocations: 24.712 MiB, 37.36% compilation time)

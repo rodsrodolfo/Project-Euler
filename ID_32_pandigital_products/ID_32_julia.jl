@@ -27,3 +27,4 @@ end
 println(@time sumPandigitalProducts())
 
 # answer: 45228
+# 0.509695 seconds (9.06 M allocations: 799.436 MiB, 5.68% gc time)

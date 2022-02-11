@@ -29,4 +29,5 @@ end
 const NUM = 2000
 println(@time countSundays1stMonthFrom1901(2000))
 
-# answer: 
+# answer: 171
+# 0.000149 seconds (1000 allocations: 240.625 KiB)

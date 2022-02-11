@@ -38,3 +38,4 @@ println("size: $size, a: $a, b: $b")
 println("a*b = $(a*b)")
 
 # answer: -59231
+# 0.068355 seconds (1 allocation: 16 bytes)

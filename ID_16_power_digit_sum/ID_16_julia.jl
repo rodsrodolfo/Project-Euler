@@ -25,3 +25,4 @@ end
 println(@time sumOfDigitsNumToPower(2, 1000))
 
 # answer: 1366
+# 0.001712 seconds (2.30 k allocations: 3.796 MiB)

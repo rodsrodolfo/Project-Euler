@@ -16,3 +16,4 @@ end
 println(maxProduct)
 
 # answer: 23514624000
+# 0.069967 seconds (126.12 k allocations: 7.008 MiB, 97.00% compilation time)

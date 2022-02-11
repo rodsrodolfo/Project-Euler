@@ -28,3 +28,4 @@ const NUM = 2000000
 printResultID10(NUM)
 
 # answer: 142913828922
+# 0.500120 seconds

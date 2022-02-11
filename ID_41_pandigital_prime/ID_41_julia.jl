@@ -22,3 +22,4 @@ end
 println(@time largestPandigitalPrime())
 
 # answer: 7652413
+# 0.000331 seconds (3.06 k allocations: 304.406 KiB)

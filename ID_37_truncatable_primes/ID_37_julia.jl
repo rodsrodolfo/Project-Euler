@@ -34,3 +34,4 @@ end
 println(@time sumAllTruncatable())
 
 # answer: 748317
+# 0.133933 seconds

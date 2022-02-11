@@ -49,3 +49,4 @@ const NUM = 28123
 println(@time sum(notPossibleCombinationBelow(NUM)))
 
 # answer: 4179871
+# 24.500999 seconds (83.39 k allocations: 2.849 MiB)

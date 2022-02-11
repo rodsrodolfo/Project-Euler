@@ -21,3 +21,4 @@ filePath = "/home/mateus/Documents/Coding/Project Euler/ID_13_large_sum/ID_13_so
 println(@time largeSum(filePath)[1:10])
 
 # answer: 5537376230
+# 0.148737 seconds (454.61 k allocations: 25.311 MiB, 99.07% compilation time)

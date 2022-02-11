@@ -40,3 +40,4 @@ const MAX = 28123
 println(@time answer(MAX))
 
 # answer: 4179871
+# 0.154134 seconds (10 allocations: 341.781 KiB)

@@ -32,3 +32,4 @@ const NUM = 20
 println(@time numFromFactorization(factorizationSmallestMultiple(NUM)))
 
 # answer: 232792560
+# 0.012245 seconds (195 allocations: 22.594 KiB, 51.78% compilation time)

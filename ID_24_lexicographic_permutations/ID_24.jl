@@ -16,3 +16,4 @@ const NTH = 1000000
 println(@time nthPermutation(RANGE, NTH))
 
 # answer: 2783915460
+# 0.163779 seconds (3.01 M allocations: 305.559 MiB, 12.04% gc time, 10.36% compilation time)

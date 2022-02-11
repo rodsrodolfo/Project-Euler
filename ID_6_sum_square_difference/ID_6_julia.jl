@@ -18,3 +18,4 @@ num = 100
 println("Difference is $diff")
 
 # answer: 25164150
+# 0.118455 seconds (273.60 k allocations: 15.097 MiB, 95.02% compilation time)

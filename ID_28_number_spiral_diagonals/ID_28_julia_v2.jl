@@ -39,3 +39,6 @@ end
 
 const NUM = 1001
 println(@time sumDiagonalsSpiral(NUM))
+
+# answer: 669171001
+# 0.004830 seconds (2 allocations: 7.645 MiB)

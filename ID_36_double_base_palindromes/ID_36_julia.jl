@@ -35,3 +35,4 @@ const NUM = 1000000
 println(@time sumAllPalindromesBasesUnder(NUM))
 
 # answer: 872187
+# 0.116432 seconds (3.10 M allocations: 126.368 MiB, 10.58% gc time)

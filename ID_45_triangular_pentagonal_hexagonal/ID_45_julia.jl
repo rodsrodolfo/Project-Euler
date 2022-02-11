@@ -46,3 +46,4 @@ const NUM = 40755
 println(@time findNextTPH(NUM))
 
 # answer: 1533776805
+# 0.000396 seconds

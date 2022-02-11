@@ -29,3 +29,4 @@ found, largest = @time largestCycle(NUM)
 println("number: 1/$(found)\ncycle size: $(largest)")
 
 # answer: 983
+# 0.010460 seconds (3.38 k allocations: 2.213 MiB)

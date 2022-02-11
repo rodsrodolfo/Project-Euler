@@ -18,3 +18,4 @@ end
 println(@time findTripletProduct(1000))
 
 # answer: 31875000
+# 0.000314 seconds
