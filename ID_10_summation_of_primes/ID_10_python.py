@@ -2,6 +2,7 @@
 
 Find the sum of all the primes below two million."""
 
+from datetime import datetime
 from math import sqrt
 
 
@@ -12,14 +13,14 @@ def isPrime(num):
     return True
 
 
-num = 2000000
+start = datetime.now()
 
-primeSum = 2
+result = sum(filter(isPrime, range(3, 2000000, 2))) + 2
 
-for i in range(3, num, 2):
-    if isPrime(i):
-        primeSum += i
+deltatime = datetime.now() - start
 
-print(f"Sum of primes below {num} is: {primeSum}")
+print(f"sum = {result}")
+print(f"time = {deltatime}")
 
 # answer: 142913828922
+# 0:00:06.419969
