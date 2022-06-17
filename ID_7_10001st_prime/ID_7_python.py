@@ -10,15 +10,19 @@ def isPrime(num):
     return True
 
 
-num = 10001
-test = 3
-found = 1
+def nth_prime(nth):
+    test = 3
+    found = 1
+    while found < nth:
+        if isPrime(test):
+            found += 1
+        test += 2
+    return test - 2
 
-while found < num:
-    if isPrime(test):
-        found += 1
-    test += 2
+nth = 10001
 
-print(f"{num}st prime is {test - 2}")
+nth_prime_found = nth_prime(nth)
+
+print(f"{nth}st prime is {nth_prime_found}")
 
 # answer: 104743

@@ -9,18 +9,23 @@ function isPrime(num)
     return true
 end
 
-num = 10001
-test = 3
-found = 1
-
-@time while found < num
-    if isPrime(test)
-        global found += 1
+function nth_prime(nth)
+    test = 3
+    found = 1
+    while found < nth
+        if isPrime(test)
+            found += 1
+        end
+        test += 2
     end
-    global test += 2
+    return test - 2
 end
 
-println("$(num)st prime is $(test - 2)")
+const nth = 10001
+
+@time nth_prime_found = nth_prime(nth)
+
+println("$(nth)st prime is $nth_prime_found")
 
 # answer: 104743
-# 0.025785 seconds (79.61 k allocations: 2.037 MiB, 47.17% compilation time)
+# 0.010568 seconds (1 allocation: 16 bytes)
