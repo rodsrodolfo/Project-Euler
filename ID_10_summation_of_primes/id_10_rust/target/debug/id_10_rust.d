@@ -1,0 +1,1 @@
+/home/mrodolfo/Documents/Cloned_repositories/Project-Euler/ID_10_summation_of_primes/id_10_rust/target/debug/id_10_rust: /home/mrodolfo/Documents/Cloned_repositories/Project-Euler/ID_10_summation_of_primes/id_10_rust/src/main.rs

@@ -1,0 +1,1 @@
+/home/mrodolfo/Documents/Cloned_repositories/Project-Euler/ID_1_Multiples_of_3_and_5/id_1_rust/target/debug/id_1_rust: /home/mrodolfo/Documents/Cloned_repositories/Project-Euler/ID_1_Multiples_of_3_and_5/id_1_rust/src/main.rs
