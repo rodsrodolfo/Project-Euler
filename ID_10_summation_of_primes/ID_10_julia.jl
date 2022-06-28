@@ -21,11 +21,8 @@ function primeSumBelowNUM(num::Int64)
     return totalSum
 end
 
-printResultID10(num::Int64) = println(@time primeSumBelowNUM(num))
-
 const NUM = 2000000
-
-printResultID10(NUM)
+println(@time primeSumBelowNUM(NUM))
 
 # answer: 142913828922
 # 0.500120 seconds
