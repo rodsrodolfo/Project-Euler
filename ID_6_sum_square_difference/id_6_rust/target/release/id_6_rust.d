@@ -1,0 +1,1 @@
+/home/mrodolfo/Documents/Cloned_repositories/Project-Euler/ID_6_sum_square_difference/id_6_rust/target/release/id_6_rust: /home/mrodolfo/Documents/Cloned_repositories/Project-Euler/ID_6_sum_square_difference/id_6_rust/src/main.rs
