@@ -1,1 +1,1 @@
-/home/mateus/Documents/cloned_repositories/Project-Euler/ID_10_summation_of_primes/id_10_rust/target/release/id_10_rust: /home/mateus/Documents/cloned_repositories/Project-Euler/ID_10_summation_of_primes/id_10_rust/src/main.rs
+C:\Users\mateu\Documents\Cloned_repositories\Project-Euler\ID_10_summation_of_primes\id_10_rust\target\release\id_10_rust.exe: C:\Users\mateu\Documents\Cloned_repositories\Project-Euler\ID_10_summation_of_primes\id_10_rust\src\main.rs
