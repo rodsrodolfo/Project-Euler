@@ -1,0 +1,1 @@
+/home/mateus/Documents/cloned_repositories/Project-Euler/ID_9_special_pythagorean_triplet/id_9_rust_error_handling/target/debug/id_9_rust_error_handling: /home/mateus/Documents/cloned_repositories/Project-Euler/ID_9_special_pythagorean_triplet/id_9_rust_error_handling/src/main.rs

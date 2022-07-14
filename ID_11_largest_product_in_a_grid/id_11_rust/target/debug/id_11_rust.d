@@ -1,0 +1,1 @@
+/home/mateus/Documents/cloned_repositories/Project-Euler/ID_11_largest_product_in_a_grid/id_11_rust/target/debug/id_11_rust: /home/mateus/Documents/cloned_repositories/Project-Euler/ID_11_largest_product_in_a_grid/id_11_rust/src/main.rs

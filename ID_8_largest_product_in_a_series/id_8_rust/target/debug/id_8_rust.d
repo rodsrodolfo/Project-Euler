@@ -1,0 +1,1 @@
+/home/mateus/Documents/cloned_repositories/Project-Euler/ID_8_largest_product_in_a_series/id_8_rust/target/debug/id_8_rust: /home/mateus/Documents/cloned_repositories/Project-Euler/ID_8_largest_product_in_a_series/id_8_rust/src/main.rs
