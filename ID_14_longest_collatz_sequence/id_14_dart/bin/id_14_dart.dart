@@ -1,5 +1,3 @@
-import 'package:id_14_dart/id_14_dart.dart' as id_14_dart;
-
 void main(List<String> arguments) {
   List<double> found = [1, len_collatz(1)];
   double collatz;
